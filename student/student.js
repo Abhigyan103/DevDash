@@ -1,5 +1,9 @@
 class Student {
-  // Constructor to initialize the student object
+  constructor(name, roll, department) {
+    this.name = name;
+    this.roll = roll;
+    this.department = department;
+  }
 }
 
 function parseStudents() {
