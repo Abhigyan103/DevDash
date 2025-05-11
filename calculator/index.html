@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="../index.js"></script>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/club-logo.png">
     <title>Document</title>
   </head>
   <body>
@@ -16,12 +16,14 @@
     </nav>
     <main>
       <h1>Math Expression Evaluator</h1>
-      <textarea placeholder="Type your math expression here (e.g., 2 + 3 * 4)"></textarea>
+      <textarea id="mathExp" placeholder="Type your math expression here (e.g., 2 + 3 * 4)"></textarea>
+
       <h4>Result: </h4>
-      <p></p>
+      <p id="result" style="color: white;"></p>
     </main>
   </body>
   <link rel="stylesheet" href="../style.css" />
+  <script src="./calc.js"></script>
   <script>
     
 
