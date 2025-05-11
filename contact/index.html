@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="icon" href="/assets/club-logo.png"
+    >
   </head>
   <body>
     <nav>
@@ -16,13 +18,14 @@
     </nav>
     <main>
       <div class="contact-card">
+        
         <h2>Contact Us</h2>
         <form onsubmit="sendContactEmail(event)">
           <input name="name" type="text" placeholder="Your Name" required />
           <input name="email" type="email" placeholder="Your Email" required />
           <input
             name="phone"
-            type="number"
+            type="text"
             placeholder="Your Phone number"
             required
           />
@@ -32,10 +35,11 @@
             rows="5"
             required
           ></textarea>
-          <button type="submit">Send Message</button>
+          <button>Send Message</button>
         </form>
       </div>
     </main>
   </body>
   <link rel="stylesheet" href="../style.css" />
+  <script src="/index.js"></script>
 </html>
