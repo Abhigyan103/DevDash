@@ -9,3 +9,12 @@ function calculate(inputText) {
 }
 
 // Write some code to make the answer appear in the result div as soon as the user types and use the calculate function
+mathInput.addEventListener("input", () => {
+    try {
+      // Evaluate the math expression
+      const evaluatedResult = eval(mathInput.value);
+      result.textContent = evaluatedResult;
+    } catch (error) {
+      result.textContent = "Error: Invalid expression";
+    }
+  });
