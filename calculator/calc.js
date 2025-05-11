@@ -4,6 +4,7 @@ const result = document.getElementById("result");
 function calculate(inputText) {
     let ans=0;
     // Calculate answer
+    ans = eval(inputText);
     return ans;
 }
 
