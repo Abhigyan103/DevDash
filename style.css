@@ -102,7 +102,7 @@ h4 {
 
 .contact-card {
   background: white;
-  color:black;
+  color:dark;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -114,6 +114,7 @@ h4 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   color: #333;
+  text-align: center;
 }
 
 .contact-card form {
@@ -129,6 +130,12 @@ h4 {
   border-radius: 0.5rem;
   font-size: 1rem;
 }
+.contact-card input::-webkit-outer-spin-button,
+.contact-card input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 
 .contact-card button {
   padding: 0.75rem;
