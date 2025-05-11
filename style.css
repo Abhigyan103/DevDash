@@ -109,7 +109,8 @@ h4 {
 .contact-card h2 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
-  color: #3b3b3b;
+  font-family: Darker Grotesque;
+  font: Darker Grotesque;
   position: relative;
   left: 38%;
   
