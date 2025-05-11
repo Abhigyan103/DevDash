@@ -4,9 +4,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/DevDash/assets/club-logo.png" type="image/x-icon">
-
+    <link rel="icon" href="/DevDash/assets/club-logo.png" type="image/x-icon" />
     <title>Document</title>
+    <style>
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Darker Grotesque;
+      }
+
+      .contact-card {
+        position: relative;
+      }
+
+      .contact-card > form > textarea {
+        max-width: 95%;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -22,12 +43,15 @@
         <form onsubmit="sendContactEmail(event)">
           <input name="name" type="text" placeholder="Your Name" required />
           <input name="email" type="email" placeholder="Your Email" required />
-          <input
+          <!-- <input
+            id="numberfeild"
             name="phone"
             type="number"
-            placeholder="Your Phone number"
+            placeholder="Please Enter Your 10 - 12 digit Phone number"
             required
-          />
+          /> -->
+          <input id="numberfeild" type="text" maxlength="10" pattern="\d{1,5}" placeholder="Enter your phone number">
+
           <textarea
             name="message"
             placeholder="Your Message"
@@ -40,4 +64,11 @@
     </main>
   </body>
   <link rel="stylesheet" href="../style.css" />
+  <script>
+    const numberInput = document.getElementById("numberfeild");
+    numberInput.addEventListener("input", () => {
+      var currentValue = event.target.value;
+      // console.log(currentValue);
+    });
+  </script>
 </html>
