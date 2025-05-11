@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+
+
 main {
   display: flex;
   flex-direction: column;
@@ -5,6 +8,7 @@ main {
   height: 100vh;
   width: 100vw;
   padding: 10px;
+  color:white;
 }
 body {
   background-image: url("assets/background.png");
@@ -103,6 +107,7 @@ h4 {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   width: 100%;
+  font-family: "Darker Grotesque", sans-serif;
 }
 
 .contact-card h2 {
@@ -123,7 +128,12 @@ h4 {
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   font-size: 1rem;
+  resize: none;
 }
+.contact-card textarea{
+  width: 94%;
+}
+
 
 .contact-card button {
   padding: 0.75rem;
