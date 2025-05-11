@@ -17,23 +17,16 @@
     </nav>
     <main>
       <h1>Math Expression Evaluator</h1>
-      <textarea placeholder="Type your math expression here (e.g., 2 + 3 * 4)"></textarea>
+      <textarea placeholder="Type your math expression here (e.g., 2 + 3 * 4)" id="mathExp"></textarea>
       <h4>Result: </h4>
-      <p></p>
+      <p id="result" style="color: white;"></p>
     </main>
   </body>
   <link rel="stylesheet" href="../style.css" />
+  <script src="calc.js"></script>
   <script>
     
 
-    mathInput.addEventListener("input", () => {
-      try {
-        // Evaluate the math expression
-        const evaluatedResult = eval(mathInput.value);
-        result.textContent = evaluatedResult;
-      } catch (error) {
-        result.textContent = "Error: Invalid expression";
-      }
-    });
+   
   </script>
 </html>
