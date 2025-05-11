@@ -78,8 +78,48 @@ nav a:hover {
 
 .cssBattleBox {
   /* Your design goes here */
+  width: 100%;
+  height: 100%;
+  background-color: #cf6939;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.cssBattleBox>.upperhalf{
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.cssBattleBox>.upperhalf>.skin1{
+width: 120px;
+height: 170px;
+background-color: #f9d081; 
+border-radius: 50% 50% 0% 0%;
+position: absolute;
+
+}
+.cssBattleBox>.upperhalf>.orange{
+width: 60px;
+height: 110px;
+background-color: #cf6939; 
+border-radius: 50% 50% 0% 0%;
+position: absolute;
+top: 60px;
+left: 30px;
+}
+
+.cssBattleBox>.upperhalf>.blue{
+  width: 60px;
+height: 170px;
+background-color: #123747; 
+border-radius:  0% 0% 50% 50%;
+position: absolute;
+top: 170px;
+left: 30px;
+}
 img {
   width: 100%;
   height: 100%;
@@ -175,4 +215,9 @@ td {
 }
 th {
   background-color: #f4f4f4;
+}
+
+.stdbtn{
+  background-color: deepskyblue;
+  color: white;
 }
