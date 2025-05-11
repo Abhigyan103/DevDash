@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="../index.js"></script>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/battle/">Battle</a>
-      <a href="/contact/" style="color: aqua">Contact</a>
-      <a href="/student/">Student</a>
-      <a href="/calculator/">Calculator</a>
-    </nav>
-    <main>
-      <div class="contact-card">
-        <h2>Contact Us</h2>
-        <form onsubmit="sendContactEmail(event)">
-          <input name="name" type="text" placeholder="Your Name" required />
-          <input name="email" type="email" placeholder="Your Email" required />
-          <input
-            name="phone"
-            type="number"
-            placeholder="Your Phone number"
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            rows="5"
-            required
-          ></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </main>
-  </body>
-  <link rel="stylesheet" href="../style.css" />
+<script src="../index.js"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="./assets/club-logo.png" />
+
+</head>
+
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/battle/">Battle</a>
+    <a href="/contact/" style="color: aqua">Contact</a>
+    <a href="/student/">Student</a>
+    <a href="/calculator/">Calculator</a>
+  </nav>
+  <main>
+    <div class="contact-card">
+      <h2>Contact Us</h2>
+      <form onsubmit="sendContactEmail(event)">
+        <input name="name" type="text" placeholder="Your Name" required />
+        <input name="email" type="email" placeholder="Your Email" required />
+        <input name="phone" type="number" placeholder="Your Phone number" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+</body>
+<link rel="stylesheet" href="../style.css" />
+
 </html>

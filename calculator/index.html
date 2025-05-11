@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="../index.js"></script>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/battle/">Battle</a>
-      <a href="/contact/" style="color: aqua">Contact</a>
-      <a href="/student/">Student</a>
-      <a href="/calculator/" style="color: aqua">Calculator</a>
-    </nav>
-    <main>
-      <h1>Math Expression Evaluator</h1>
-      <textarea placeholder="Type your math expression here (e.g., 2 + 3 * 4)"></textarea>
-      <h4>Result: </h4>
-      <p></p>
-    </main>
-  </body>
-  <link rel="stylesheet" href="../style.css" />
-  <script>
-    
+<script src="../index.js"></script>
 
-    mathInput.addEventListener("input", () => {
-      try {
-        // Evaluate the math expression
-        const evaluatedResult = eval(mathInput.value);
-        result.textContent = evaluatedResult;
-      } catch (error) {
-        result.textContent = "Error: Invalid expression";
-      }
-    });
-  </script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="../assets/club-logo.png" />
+
+</head>
+
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/battle/">Battle</a>
+    <a href="/contact/" style="color: aqua">Contact</a>
+    <a href="/student/">Student</a>
+    <a href="/calculator/" style="color: aqua">Calculator</a>
+  </nav>
+  <main>
+    <h1>Math Expression Evaluator</h1>
+    <textarea placeholder="Type your math expression here (e.g., 2 + 3 * 4)"></textarea>
+    <h4>Result: </h4>
+    <p></p>
+  </main>
+</body>
+<link rel="stylesheet" href="../style.css" />
+<script>
+
+
+  mathInput.addEventListener("input", () => {
+    try {
+      // Evaluate the math expression
+      const evaluatedResult = eval(mathInput.value);
+      result.textContent = evaluatedResult;
+    } catch (error) {
+      result.textContent = "Error: Invalid expression";
+    }
+  });
+</script>
+
 </html>
