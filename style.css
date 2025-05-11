@@ -97,6 +97,13 @@ h4 {
   padding-bottom: 100px;
 }
 
+.parent-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .contact-card {
   background: white;
   padding: 2rem;
