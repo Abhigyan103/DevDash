@@ -4,14 +4,26 @@
     <meta charset="UTF-8" />
     <title>Student Data Table</title>
     <script src="student.js"></script>
+    <link rel="icon" href="../assets/club-logo.png"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+
+    <style>
+      body{
+        font-family: 'Darker Grotesque', sans-serif;
+        background-color: #1a1a1a;
+        color: #fff;
+      }
+    </style>
   </head>
   <body>
     <nav>
       <a href="/">Home</a>
-      <a href="/battle/">Battle</a>
-      <a href="/contact/">Contact</a>
-      <a href="/student/" style="color: aqua">Student</a>
-      <a href="/calculator/">Calculator</a>
+      <a href="../battle/">Battle</a>
+      <a href="../contact/">Contact</a>
+      <a href="../student/" style="color: aqua">Student</a>
+      <a href="../calculator/">Calculator</a>
     </nav>
     <main>
       <h1>Enter Student Data</h1>
@@ -19,9 +31,13 @@
         Each line should contain space-separated values for names, rolls, and
         departments. (Example input in example.txt)
       </h4>
+      <div class="student-container">
       <textarea id="dataInput"></textarea><br />
-      <button onclick="parseStudents()">Generate Table</button>
-      <table id="outputTable">
+      <button 
+      style="background-color: blue;
+      color: white;"
+      onclick="parseStudents()">Generate Table</button>
+      <table style = "color: white;"id="outputTable">
         <thead>
           <tr>
             <th>Name</th>
@@ -32,6 +48,7 @@
         </thead>
         <tbody></tbody>
       </table>
+    </div>
     </main>
   </body>
   <link rel="stylesheet" href="../style.css" />
