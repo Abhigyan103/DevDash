@@ -1,12 +1,24 @@
 class Student {
   // Constructor to initialize the student object
+  constructor(name, roll, dept) {
+    this.name = name
+    this.roll= roll
+    this.dept = dept
+  }
 }
 
 function parseStudents() {
-  const input = document.getElementById("dataInput").value.trim().split("\n");
-  // Validate input
 
+
+  const input = document.getElementById("dataInput").value.trim().split("\n");
+
+  // const input = userinput.trim().split("\n"); // changes
+  
+  // Validate input
+  
   // Extracting names, rolls, and departments from the input
+  
+  
 
   let students = []; // Array to hold student objects
 
@@ -24,3 +36,5 @@ function populateTable() {
 function deleteRow(button) {
   //Logic to delete a row from the table
 }
+
+parseStudents()

@@ -6,7 +6,7 @@
     <link rel="icon" type="image/x-icon" href="/assets/club-logo.png">
     <script src="student.js"></script>
   </head>
-  <body>
+  <body >
     <nav>
       <a href="/">Home</a>
       <a href="/battle/">Battle</a>
@@ -14,14 +14,14 @@
       <a href="/student/" style="color: aqua">Student</a>
       <a href="/calculator/">Calculator</a>
     </nav>
-    <main>
+    <main id="studentBody">
       <h1>Enter Student Data</h1>
       <h4>
         Each line should contain space-separated values for names, rolls, and
         departments. (Example input in example.txt)
       </h4>
       <textarea id="dataInput"></textarea><br />
-      <button onclick="parseStudents()">Generate Table</button>
+      <button id="studentPageButton" onclick="parseStudents()">Generate Table</button>
       <table id="outputTable">
         <thead>
           <tr>
