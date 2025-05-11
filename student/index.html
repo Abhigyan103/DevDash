@@ -9,10 +9,10 @@
   <body>
     <nav>
       <a href="/">Home</a>
-      <a href="/battle/">Battle</a>
-      <a href="/contact/">Contact</a>
-      <a href="/student/" style="color: aqua">Student</a>
-      <a href="/calculator/">Calculator</a>
+      <a href="../battle/">Battle</a>
+      <a href="../contact/">Contact</a>
+      <a href="../student/" style="color: aqua">Student</a>
+      <a href="../calculator/">Calculator</a>
     </nav>
     <main>
       <h1>Enter Student Data</h1>
@@ -20,6 +20,7 @@
         Each line should contain space-separated values for names, rolls, and
         departments. (Example input in example.txt)
       </h4>
+      <div class="student-container">
       <textarea id="dataInput"></textarea><br />
       <button onclick="parseStudents()">Generate Table</button>
       <table id="outputTable">
@@ -33,6 +34,7 @@
         </thead>
         <tbody></tbody>
       </table>
+    </div>
     </main>
   </body>
   <link rel="stylesheet" href="../style.css" />
