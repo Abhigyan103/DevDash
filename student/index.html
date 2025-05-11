@@ -3,8 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <title>Student Data Table</title>
-    <link rel="icon" href="/DevDash/assets/club-logo.png" type="image/x-icon">
+    <link rel="icon" href="/DevDash/assets/club-logo.png" type="image/x-icon" />
     <script src="student.js"></script>
+    <style>
+      #dataInput,
+      #outputTable {
+        max-width: 90vw;
+      }
+
+      #outputTable > tbody > tr {
+        color: white;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -21,7 +31,12 @@
         departments. (Example input in example.txt)
       </h4>
       <textarea id="dataInput"></textarea><br />
-      <button onclick="parseStudents()">Generate Table</button>
+      <button
+        style="background-color: blue; color: white"
+        onclick="parseStudents()"
+      >
+        Generate Table
+      </button>
       <table id="outputTable">
         <thead>
           <tr>
@@ -31,7 +46,14 @@
             <th>Action</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+            <td>Germany</td>
+          </tr>
+        </tbody>
       </table>
     </main>
   </body>
