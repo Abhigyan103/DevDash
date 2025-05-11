@@ -4,10 +4,13 @@ function sendContactEmail(event) {
         name: name.value,
         email: email.value,
         message: message.value,
-        phone: phone.value,
+        phone: String(phone.value),
     };
 
+    
     //Validation logic
 
-    console.log(formData);
+    // console.log(formData);
+
+
 }

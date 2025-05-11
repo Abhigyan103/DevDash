@@ -12,6 +12,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
+  color: white;
 }
 
 body::before {
@@ -159,3 +160,5 @@ td {
 th {
   background-color: #f4f4f4;
 }
+
+
