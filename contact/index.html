@@ -5,6 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Darker Grotesque' rel='stylesheet'>
+    <style>
+      body {
+          font-family: 'Darker Grotesque';
+      }
+      </style>
+    <link rel="icon" type="image/x-icon" href="/assets/club-logo.png">
   </head>
   <body>
     <nav>
@@ -17,13 +24,14 @@
     <main>
       <div class="contact-card">
         <h2>Contact Us</h2>
-        <form onsubmit="sendContactEmail(event)">
+        <form id="formId">
           <input name="name" type="text" placeholder="Your Name" required />
           <input name="email" type="email" placeholder="Your Email" required />
           <input
             name="phone"
-            type="number"
             placeholder="Your Phone number"
+            id="phone"
+            pattern="[+][0-9]{1,2}[0-9]{10}"
             required
           />
           <textarea
@@ -32,10 +40,18 @@
             rows="5"
             required
           ></textarea>
-          <button type="submit">Send Message</button>
+          <button type="button">Send Message</button>
         </form>
       </div>
     </main>
   </body>
   <link rel="stylesheet" href="../style.css" />
+  <script>
+    var form = document.getElementById("formId");
+    function submitForm(event) {
+       event.preventDefault();
+       form.style.display = "none";
+    }
+    form.addEventListener('submit', submitForm);
+ </script>
 </html>

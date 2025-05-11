@@ -103,6 +103,7 @@ h4 {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   width: 100%;
+  font-family: 'Darker Grotesque';
 }
 
 .contact-card h2 {
@@ -123,6 +124,7 @@ h4 {
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   font-size: 1rem;
+  max-width: 100%;
 }
 
 .contact-card button {
@@ -158,4 +160,14 @@ td {
 }
 th {
   background-color: #f4f4f4;
+}
+#homepage{
+   color: white;
+}
+#result{
+  color: white;
+}
+#generate{
+  background-color: deepskyblue;
+  color: white;
 }

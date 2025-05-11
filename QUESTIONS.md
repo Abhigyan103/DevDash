@@ -10,7 +10,7 @@
 ---
 
 ## 📞 Contact Page  
-- [6] Fix the issue where the `console.log` disappears after some milliseconds.  
+- [6]   
 - [8] Add phone number validation:  
   - Accept 10-digit numbers.  
   - Country extension code (Country code should be optional for the user).  
