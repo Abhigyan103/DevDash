@@ -1,3 +1,7 @@
+*{
+  color: white;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -74,8 +78,43 @@ nav a:hover {
 
 .cssBattleBox {
   /* Your design goes here */
+  width: 100%;
+  height: 100%;
+  background-color: #cf6939;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
+.cssBattleBox>.skin1{
+width: 120px;
+height: 170px;
+background-color: #f9d081; 
+border-radius: 50% 50% 0% 0%;
+position: absolute;
+
+}
+.cssBattleBox>.orange{
+width: 60px;
+height: 110px;
+background-color: #cf6939; 
+border-radius: 50% 50% 0% 0%;
+position: absolute;
+top: 60px;
+left: 30px;
+}
+
+.cssBattleBox>.blue{
+  width: 60px;
+height: 170px;
+background-color: #123747; 
+border-radius:  0% 0% 50% 50%;
+position: absolute;
+top: 170px;
+left: 30px;
+}
 img {
   width: 100%;
   height: 100%;
@@ -98,6 +137,7 @@ h4 {
 
 .contact-card {
   background: white;
+  color:dark;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -109,6 +149,7 @@ h4 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   color: #333;
+  text-align: center;
 }
 
 .contact-card form {
@@ -124,6 +165,17 @@ h4 {
   border-radius: 0.5rem;
   font-size: 1rem;
 }
+
+.contact-card textarea{
+  resize: none;
+}
+
+.contact-card input::-webkit-outer-spin-button,
+.contact-card input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 
 .contact-card button {
   padding: 0.75rem;
@@ -142,11 +194,12 @@ h4 {
 
 textarea {
   padding: 0.75rem;
-  width: 100%;
+  width: 70%;
+  resize: none;
 }
 
 table {
-  width: 100%;
+  width: auto;
   border-collapse: collapse;
   margin-top: 20px;
 }
@@ -158,4 +211,13 @@ td {
 }
 th {
   background-color: #f4f4f4;
+}
+
+.stdbtn{
+  background-color: deepskyblue;
+  color: white;
+}
+
+#result{
+  color: white;
 }

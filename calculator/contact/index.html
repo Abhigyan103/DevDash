@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="../index.js"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="../assets/club-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/battle/">Battle</a>
+    <a href="/contact/" style="color: aqua">Contact</a>
+    <a href="/student/">Student</a>
+    <a href="/calculator/">Calculator</a>
+  </nav>
+  <main>
+    <div class="contact-card">
+      <h2>Contact Us</h2>
+      <form onsubmit="sendContactEmail(event)">
+        <input name="name" type="text" placeholder="Your Name" required />
+        <input name="email" type="email" placeholder="Your Email" required />
+        <input name="phone" type="number" placeholder="Your Phone number" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+</body>
+<link rel="stylesheet" href="../style.css" />
+
+</html>
