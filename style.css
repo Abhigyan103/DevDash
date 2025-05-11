@@ -103,6 +103,8 @@ h4 {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   width: 100%;
+  display: grid;
+  place-items: center;
 }
 
 .contact-card h2 {
