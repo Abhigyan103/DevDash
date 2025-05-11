@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="../index.js"></script>
+  <script src="index.js"></script>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,15 +16,16 @@
     </nav>
     <main>
       <h1>Math Expression Evaluator</h1>
-      <textarea placeholder="Type your math expression here (e.g., 2 + 3 * 4)"></textarea>
-      <h4>Result: </h4>
-      <p></p>
+      <textarea
+        id="mathExp"
+        placeholder="Type your math expression here (e.g., 2 + 3 * 4)"
+      ></textarea>
+      <h4>Result:</h4>
+      <p id="result" style="color: white"></p>
     </main>
   </body>
   <link rel="stylesheet" href="../style.css" />
   <script>
-    
-
     mathInput.addEventListener("input", () => {
       try {
         // Evaluate the math expression

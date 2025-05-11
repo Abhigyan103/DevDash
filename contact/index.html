@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="../index.js"></script>
   <head>
+    <script src="index.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -22,20 +28,31 @@
           <input name="email" type="email" placeholder="Your Email" required />
           <input
             name="phone"
-            type="number"
+            type="tel"
             placeholder="Your Phone number"
             required
           />
           <textarea
+            style="width: inherit"
             name="message"
             placeholder="Your Message"
             rows="5"
             required
           ></textarea>
-          <button type="submit">Send Message</button>
+          <button type="submit" onclick="handleClick()">Send Message</button>
         </form>
       </div>
     </main>
   </body>
+  <script>
+    const handleClick = () => {
+      const name = document.querySelector('input[name="name"]').value;
+      const email = document.querySelector('input[name="email"]').value;
+      const phone = document.querySelector('input[name="phone"]').value;
+      const message = document.querySelector('textarea[name="message"]').value;
+      console.log("object");
+      console.log(name, email, phone, message);
+    };
+  </script>
   <link rel="stylesheet" href="../style.css" />
 </html>

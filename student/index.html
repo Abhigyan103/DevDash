@@ -2,6 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Student Data Table</title>
     <script src="student.js"></script>
   </head>
@@ -20,7 +26,7 @@
         departments. (Example input in example.txt)
       </h4>
       <textarea id="dataInput"></textarea><br />
-      <button onclick="parseStudents()">Generate Table</button>
+      <button onclick="parseStudents()" class="btn">Generate Table</button>
       <table id="outputTable">
         <thead>
           <tr>
@@ -28,6 +34,7 @@
             <th>Roll</th>
             <th>Department</th>
             <th>Action</th>
+            <button type="button">Delete</button>
           </tr>
         </thead>
         <tbody></tbody>
