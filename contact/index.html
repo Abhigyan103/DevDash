@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <nav>
@@ -14,10 +17,10 @@
       <a href="/student/">Student</a>
       <a href="/calculator/">Calculator</a>
     </nav>
-    <main>
-      <div class="contact-card">
-        <h2>Contact Us</h2>
-        <form onsubmit="sendContactEmail(event)">
+    <main style="font-family:Darker Grotesque ;">
+      <div class="contact-card" >
+        <h2 style="color: black; font-family:Darker Grotesque;">Contact Us</h2>
+        <form onsubmit="sendContactEmail(event)" >
           <input name="name" type="text" placeholder="Your Name" required />
           <input name="email" type="email" placeholder="Your Email" required />
           <input
