@@ -6,6 +6,7 @@ main {
   width: 100vw;
   padding: 10px;
 }
+
 body {
   background-image: url("assets/background.png");
   background-size: cover;
@@ -42,6 +43,7 @@ nav {
   background-position: center;
   padding-right: 40px;
 }
+
 nav a {
   color: white;
   text-decoration: none;
@@ -52,6 +54,7 @@ nav a {
   padding: 5px 10px;
   border-radius: 5px;
 }
+
 nav a:hover {
   background: #294368;
 }
@@ -65,6 +68,7 @@ nav a:hover {
   display: flex;
   background-color: #fff;
 }
+
 .row {
   display: flex;
   gap: 10px;
@@ -90,6 +94,7 @@ h1 {
   color: #fff;
   text-align: center;
 }
+
 h4 {
   color: #fff;
   text-align: center;
@@ -150,12 +155,31 @@ table {
   border-collapse: collapse;
   margin-top: 20px;
 }
+
 th,
 td {
   border: 1px solid #ccc;
   padding: 8px;
   text-align: left;
 }
+
 th {
   background-color: #f4f4f4;
+}
+
+/*Arrow Removal*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Font Change */
+.main-section {
+  font-family: "Darker Grotesque", sans-serif;
 }
