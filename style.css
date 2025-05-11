@@ -130,6 +130,11 @@ h4 {
   border-radius: 0.5rem;
   font-size: 1rem;
 }
+
+.contact-card textarea{
+  resize: none;
+}
+
 .contact-card input::-webkit-outer-spin-button,
 .contact-card input::-webkit-inner-spin-button {
   -webkit-appearance: none;
