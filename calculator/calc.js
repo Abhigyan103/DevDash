@@ -10,6 +10,7 @@ function calculate(inputText) {
 
 // Write some code to make the answer appear in the result div as soon as the user types and use the calculate function
 mathInput.addEventListener("input", () => {
+    console.log("working")
     try {
       // Evaluate the math expression
       const evaluatedResult = eval(mathInput.value);
