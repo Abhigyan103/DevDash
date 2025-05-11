@@ -6,7 +6,6 @@
 1.3 Change the text color to white (5 points).  
 
 **Subtotal: 18 points**
-
 ---
 
 ## 📞 Contact Page  
