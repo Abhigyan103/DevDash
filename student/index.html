@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Student Data Table</title>
-    <script src="student.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/battle/">Battle</a>
-      <a href="/contact/">Contact</a>
-      <a href="/student/" style="color: aqua">Student</a>
-      <a href="/calculator/">Calculator</a>
-    </nav>
-    <main>
-      <h1>Enter Student Data</h1>
-      <h4>
-        Each line should contain space-separated values for names, rolls, and
-        departments. (Example input in example.txt)
-      </h4>
-      <textarea id="dataInput"></textarea><br />
-      <button onclick="parseStudents()">Generate Table</button>
-      <table id="outputTable">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Roll</th>
-            <th>Department</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </main>
-  </body>
-  <link rel="stylesheet" href="../style.css" />
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Data Table</title>
+  <script src="student.js"></script>
+</head>
+
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/battle/">Battle</a>
+    <a href="/contact/">Contact</a>
+    <a href="/student/" style="color: aqua">Student</a>
+    <a href="/calculator/">Calculator</a>
+  </nav>
+  <main>
+    <h1>Enter Student Data</h1>
+    <h4>
+      Each line should contain space-separated values for names, rolls, and
+      departments. (Example input in example.txt)
+    </h4>
+    <textarea id="dataInput"></textarea><br />
+    <button onclick="parseStudents()">Generate Table</button>
+    <table id="outputTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Roll</th>
+          <th>Department</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody style="color: aliceblue;"></tbody>
+    </table>
+  </main>
+</body>
+<link rel="stylesheet" href="../style.css" />
+
 </html>
