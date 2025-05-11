@@ -178,3 +178,8 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+/* Font Change */
+.main-section {
+  font-family: "Darker Grotesque", sans-serif;
+}
