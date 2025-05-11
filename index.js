@@ -9,6 +9,8 @@ function sendContactEmail(event) {
     };
 
     //Validation logic
-
+    if(formData.phone.length != 10) {
+        alert("Number must be 10 digit");
+    }
     console.log(formData);
 }
