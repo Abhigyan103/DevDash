@@ -1,4 +1,5 @@
 function sendContactEmail(event) {
+    
     const { name, email, phone, message } = event.target;
     const formData = {
         name: name.value,
@@ -8,6 +9,6 @@ function sendContactEmail(event) {
     };
 
     //Validation logic
-
     console.log(formData);
+    event.preventDefault();
 }
