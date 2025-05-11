@@ -12,6 +12,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
+  color:white;
 }
 
 body::before {
@@ -63,18 +64,45 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   display: flex;
-  background-color: #fff;
+  background-color: #CF6939;
 }
 .row {
   display: flex;
-  gap: 10px;
+  gap: 0px;
   justify-content: center;
   align-items: center;
 }
+/* #CF6939 ,#F9D081, #123747 ,#6D8971 */
 
 .cssBattleBox {
   /* Your design goes here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
+#a{
+  height:120px;
+  width:60px;
+  border:solid#F9D081;
+  border-width: 50px 40px 0;
+  border-radius:60% 60% 0 0;
+}
+#b{
+  height:100px;
+  width:60px;
+  background: #123747;
+}
+#c{
+  height:50px;
+  width: 60px;
+  border:solid #F9D081;
+  border-width:0 40px 50px;
+  border-radius:0 0 300px 300px;
+  background: #6D8971;
+}
+
 
 img {
   width: 100%;
@@ -149,6 +177,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  color: white;
 }
 th,
 td {
@@ -158,4 +187,19 @@ td {
 }
 th {
   background-color: #f4f4f4;
+}
+
+#studentButton{
+  background:blue;
+  color:white;
+}
+
+#dataInput{
+  height:20vh;
+  width:90vh;
+
+}
+#outputTable{
+  width:90vh;
+  color:white;
 }
