@@ -5,6 +5,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="assets/club-logo.png"/> 
+    <style>
+      textarea {
+    resize: vertical;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  *{
+    font-family:"Darker Grotesque";
+  }
+}
+
+ 
+
+
+    </style>
   </head>
   <body>
     <nav>
@@ -14,19 +33,24 @@
       <a href="/student/">Student</a>
       <a href="/calculator/">Calculator</a>
     </nav>
-    <main>
+    <main style="display: flex;align-items: center;justify-content: center;">
       <div class="contact-card">
         <h2>Contact Us</h2>
-        <form onsubmit="sendContactEmail(event)">
+       
+        <form onsubmit="if(checkphonenumber()){
+           sendContactEmail(event);
+        }">
           <input name="name" type="text" placeholder="Your Name" required />
           <input name="email" type="email" placeholder="Your Email" required />
           <input
             name="phone"
             type="number"
+            id="checkphonenumber"
             placeholder="Your Phone number"
             required
           />
           <textarea
+           
             name="message"
             placeholder="Your Message"
             rows="5"
@@ -37,5 +61,40 @@
       </div>
     </main>
   </body>
+  <script>
+    function checkphonenumber() {
+      const phone = document.getElementById("checkphonenumber").value;
+      if (phone.length == 10) {
+        alert("the Phone number  is  valid");
+        return true;
+      }
+      
+      else 
+      {
+        alert("the phone number is not valid.");
+        return false;
+      }
+    }
+  </script>
   <link rel="stylesheet" href="../style.css" />
 </html>
+<form onsubmit="return handleSubmit(event)">
+
+
+
+
+<form onsubmit="return validatePhone()">
+  <input id="phone" type="number" placeholder="Your Phone number" required />
+  <button type="submit">Submit</button>
+</form>
+
+
+
+
+
+ 
+
+
+
+ 
+
