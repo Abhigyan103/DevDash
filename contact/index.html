@@ -18,13 +18,14 @@
     </nav>
     <main>
       <div class="contact-card">
+        
         <h2>Contact Us</h2>
         <form onsubmit="sendContactEmail(event)">
           <input name="name" type="text" placeholder="Your Name" required />
           <input name="email" type="email" placeholder="Your Email" required />
           <input
             name="phone"
-            type="number"
+            type="text"
             placeholder="Your Phone number"
             required
           />
@@ -34,7 +35,7 @@
             rows="5"
             required
           ></textarea>
-          <button type="submit">Send Message</button>
+          <button>Send Message</button>
         </form>
       </div>
     </main>
