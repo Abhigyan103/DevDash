@@ -1,7 +1,14 @@
 class Student {
-  // Constructor to initialize the student object
+  constructor(Name, Roll, Department,Action) {
+    this.Name = Name;
+    this.Roll = Roll;
+    this.Department = Department;
+    this.Action = Action;
+  }
 }
 
+
+  
 function parseStudents() {
   const input = document.getElementById("dataInput").value.trim().split("\n");
   // Validate input
