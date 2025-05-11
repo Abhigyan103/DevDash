@@ -12,6 +12,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
+  font-family: "Darker Grotesque";
 }
 
 body::before {
@@ -73,7 +74,31 @@ nav a:hover {
 }
 
 .cssBattleBox {
-  /* Your design goes here */
+  width: 400px;
+  height: 400px;
+  background-color: #d15919;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .top-part {
+    width: 100px;
+    height: 100px;
+    background-color: #f0e68c;
+    border-radius: 50px 50px 0 0;
+  }
+
+  .bottom-part {
+    border-radius: 0 0 50px 50px;
+    margin-top: 50px;
+  }
+
+  .middle-part {
+    width: 50px;
+    height: 00px;
+    background-color: #003f5c;
+    position: absolute;
+  }
 }
 
 img {
@@ -157,5 +182,10 @@ td {
   text-align: left;
 }
 th {
-  background-color: #f4f4f4;
+  background-color: blue;
+  color: #fff;
+}
+button {
+  background-color: darkblue;
+  color: #fff;
 }

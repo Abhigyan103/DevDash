@@ -4,9 +4,6 @@ class Student {
 
 function parseStudents() {
   const input = document.getElementById("dataInput").value.trim().split("\n");
-  // Validate input
-
-  // Extracting names, rolls, and departments from the input
 
   let students = []; // Array to hold student objects
 
